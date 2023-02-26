@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/31f9a5e4d8.js" crossorigin="anonymous"></script>
+  <title>RegExp</title>
+</head>
+
+<body>
+  <header>
+    <div class="title">
+      <span>👾</span>
+      <h1>Expresiones Regulares</h1>
+    </div>
+    <nav id="menu">
+      <a href="#1">
+        <!--<i class="fa-solid fa-hashtag">--></i>HASHTAG
+      </a>
+      <a href="#2">
+        <!--<i class="fa-solid fa-envelope">--></i>CORREO ELECTRONICO
+      </a>
+      <a href="#3">
+        <!--<i class="fa-solid fa-lock">--></i>NUMEROS COMPLEJOS
+      </a>
+    </nav>
+    <div class="buttons">
+      <div class="button"></div>
+      <div class="button"></div>
+      <div class="button"></div>
+    </div>
+  </header>
+  <div class="info">
+    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions" target="_black">?</a>
+  </div>
+
+  <div class="secciones" id="inputs">
+    <div class="seccion" id="1">
+      <h2>Validar etiqueta (#hashtag)</h2>
+      <!-- <form action="" id="formHashTag"> -->
+        <input id="inputHashTag" type="text" name="hashtag" placeholder="#Ejemplo123" />
+        <!-- <button type="submit">Aceptar</button>
+      </form> -->
+      <p id="resultHashTag"></p>
+    </div>
+
+    <div class="seccion" id="2">
+      <h2>Validar dirección de correo electronico</h2>
+      <!-- <form action="" id="formCorreo"> -->
+        <input id="inputCorreo" type="text" name="correo" placeholder="alguien@email.com" />
+        <!-- <button type="submit"></button>
+      </form> -->
+      <p id="resultCorreo"></p>
+    </div>
+
+    <div class="seccion" id="3">
+      <h2>Validar numeros complejos</h2>
+      <!-- <form action="" id="formContrasena"> -->
+        <input id="inputNumComplejos" type="text" name="numComplejos" placeholder="-15+2i" />
+      <!-- <button type="submit"></button>
+      </form> -->
+      <p id="resultNumCompejos"></p>
+    </div>
+  </div>
+
+  <footer>
+    <h4>Integrantes</h4>
+    <p>Jose Puello Blanco - Yeison Cortes de la Rosa</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>

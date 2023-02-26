@@ -1,0 +1,226 @@
+/* @import url("https://fonts.googleapis.com/css2?family=DynaPuff&family=Silkscreen&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); */
+
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Concert One", sans-serif;
+
+  /* font-family: "Silkscreen", cursive; */
+  /* font-family: 'Dangrek', cursive; */
+  /* font-family: 'Oswald', sans-serif; */
+  /* font-family: 'VT323', monospace; */
+  /* font-family: 'Press Start 2P', cursive; */
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  border-left: 3px solid black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  /* border: 3px solid black; */
+  width: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(39, 38, 38);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #eee7dc;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  border-bottom: 3px solid black;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: #eee7dc;
+}
+
+header nav {
+  height: 100%;
+  display: flex;
+}
+
+header nav a {
+  height: 100%;
+  padding: 0 10px;
+  margin: 0 10px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.2s ease-in-out all;
+  font-weight: 500;
+}
+
+header nav a:hover {
+  background-color: #dad4ca;
+}
+
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 10px;
+  gap: 10px;
+  height: 100%;
+  width: 250px;
+}
+
+.buttons .button {
+  border-radius: 50%;
+  border: 3px solid black;
+  min-width: 20px;
+  height: 20px;
+}
+
+.title {
+  width: 250px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.title span {
+  font-size: 30px;
+}
+
+.title h1 {
+  margin-left: 5px;
+  display: inline;
+  font-size: 20px;
+}
+
+.seccion {
+  height: 100vh;
+  max-width: 800px;
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.seccion h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+.seccion p {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.seccion input[type="text"] {
+  font-size: 15px;
+  border: 3px solid black;
+  border-radius: 5px;
+  text-align: center;
+  height: 31px;
+  width: 300px;
+  background-color: transparent;
+  box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
+}
+
+.seccion input[type="text"]:focus {
+  outline: none;
+}
+
+.seccion input[type="submit"] {
+  font-size: 15px;
+  border: 3px solid black;
+  border-radius: 5px;
+  margin-left: 10px;
+  width: 90px;
+  height: 31px;
+  cursor: pointer;
+  background-color: transparent;
+  box-shadow: 3px 3px 0px 0px rgb(0, 0, 0);
+  transition: 0.2s ease-in-out all;
+}
+
+.seccion input[type="submit"]:hover {
+  background-color: black;
+  color: white;
+}
+
+.seccion input[type="submit"]:focus {
+  outline: none;
+}
+
+.text {
+  /* margin-bottom: 70px; */
+  text-align: center;
+}
+
+.info {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  bottom: 75px;
+  right: 23px;
+  z-index: 20;
+  font-size: 27px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.info:hover {
+  cursor: pointer;
+}
+
+.info a,
+.info a:active,
+.info a:visited {
+  color: #fff;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  border-top: 3px solid black;
+  text-align: center;
+  background-color: #eee7dc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
